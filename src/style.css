@@ -1,0 +1,65 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+#temperature-container {
+  margin-left: 10px;
+  margin-bottom: auto;
+}
+
+span#content-body-temperature.inactive {
+  cursor: pointer;
+}
+
+span#content-body-temperature.active {
+  font-weight: bold;
+  color: #006657;
+  font-size: 1.2em;
+}
+
+.info-box.active {
+  background: #3085cb !important;
+  cursor: default !important;
+}
+
+.info-box {
+  background: #437cab !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.info-box:hover {
+  background: #5faded !important;
+  cursor: pointer;
+}
+
+#search-bar-button.is-loading {
+  content: "";
+  pointer-events: none;
+  cursor: default;
+}
+
+#search-bar-button.loaded {
+  background-image: none;
+  content: "Search";
+}
+
+#search-bar-button.is-loading::placeholder {
+  color: transparent;
+}
+
+#weather-icon {
+  width: 4em;
+  height: 4em;
+}
+
+#search-results {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  top: 3.7em;
+}
+
+#warning-alert {
+  position: absolute;
+  z-index: 32;
+  top: 3.7em;
+}
